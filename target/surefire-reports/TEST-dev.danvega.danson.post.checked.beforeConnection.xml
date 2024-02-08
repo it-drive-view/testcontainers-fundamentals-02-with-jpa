@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dev.danvega.danson.post.checked.beforeConnection" time="8.098" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/easy/git/fac-testcontainers-dan-vega/posts/target/test-classes:/home/easy/git/fac-testcontainers-dan-vega/posts/target/classes:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.0-M3/spring-boot-starter-actuator-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0-M3/spring-boot-starter-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0-M3/spring-boot-starter-logging-3.2.0-M3.jar:/home/easy/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/easy/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/easy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/easy/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/easy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/easy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/easy/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.0-M3/spring-boot-actuator-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.0-M3/spring-boot-actuator-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/easy/.m2/repository/io/micrometer/micrometer-observation/1.12.0-M3/micrometer-observation-1.12.0-M3.jar:/home/easy/.m2/repository/io/micrometer/micrometer-commons/1.12.0-M3/micrometer-commons-1.12.0-M3.jar:/home/easy/.m2/repository/io/micrometer/micrometer-core/1.12.0-M3/micrometer-core-1.12.0-M3.jar:/home/easy/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/easy/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0-M3/spring-boot-starter-web-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0-M3/spring-boot-starter-json-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0-M3/spring-boot-starter-tomcat-3.2.0-M3.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.13/tomcat-embed-websocket-10.1.13.jar:/home/easy/.m2/repository/org/springframework/spring-web/6.1.0-M5/spring-web-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-beans/6.1.0-M5/spring-beans-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-webmvc/6.1.0-M5/spring-webmvc-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-aop/6.1.0-M5/spring-aop-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-context/6.1.0-M5/spring-context-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-expression/6.1.0-M5/spring-expression-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0-M3/spring-boot-starter-validation-3.2.0-M3.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.13/tomcat-embed-el-10.1.13.jar:/home/easy/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/easy/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/easy/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/easy/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-data-jdbc/3.2.0-M3/spring-boot-starter-data-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0-M3/spring-boot-starter-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/easy/.m2/repository/org/springframework/spring-jdbc/6.1.0-M5/spring-jdbc-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-jdbc/3.2.0-M3/spring-data-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-relational/3.2.0-M3/spring-data-relational-3.2.0-M3.jar:/home/easy/.m2/repository/com/github/jsqlparser/jsqlparser/4.6/jsqlparser-4.6.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-commons/3.2.0-M3/spring-data-commons-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/spring-tx/6.1.0-M5/spring-tx-6.1.0-M5.jar:/home/easy/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.2.0/springdoc-openapi-starter-webmvc-ui-2.2.0.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.2.0/springdoc-openapi-starter-webmvc-api-2.2.0.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.2.0/springdoc-openapi-starter-common-2.2.0.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.15/swagger-core-jakarta-2.2.15.jar:/home/easy/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.15/swagger-annotations-jakarta-2.2.15.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.15/swagger-models-jakarta-2.2.15.jar:/home/easy/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.2/jackson-dataformat-yaml-2.15.2.jar:/home/easy/.m2/repository/org/webjars/swagger-ui/5.2.0/swagger-ui-5.2.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.0-M3/spring-boot-devtools-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot/3.2.0-M3/spring-boot-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0-M3/spring-boot-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-docker-compose/3.2.0-M3/spring-boot-docker-compose-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2.jar:/home/easy/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/easy/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-testcontainers/3.2.0-M3/spring-boot-testcontainers-3.2.0-M3.jar:/home/easy/.m2/repository/org/testcontainers/testcontainers/1.19.0/testcontainers-1.19.0.jar:/home/easy/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/easy/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/easy/.m2/repository/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0.jar:/home/easy/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/easy/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.3/docker-java-transport-zerodep-3.3.3.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/easy/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/easy/.m2/repository/org/testcontainers/junit-jupiter/1.19.0/junit-jupiter-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/postgresql/1.19.0/postgresql-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/jdbc/1.19.0/jdbc-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/database-commons/1.19.0/database-commons-1.19.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0-M3/spring-boot-starter-test-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0-M3/spring-boot-test-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0-M3/spring-boot-test-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/easy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/easy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/easy/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/easy/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/easy/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/easy/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/easy/.m2/repository/net/bytebuddy/byte-buddy/1.14.8/byte-buddy-1.14.8.jar:/home/easy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/easy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/easy/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/easy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/easy/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/easy/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/easy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.8/byte-buddy-agent-1.14.8.jar:/home/easy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/easy/.m2/repository/org/mockito/mockito-junit-jupiter/5.5.0/mockito-junit-jupiter-5.5.0.jar:/home/easy/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/easy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/easy/.m2/repository/org/springframework/spring-core/6.1.0-M5/spring-core-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-jcl/6.1.0-M5/spring-jcl-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-test/6.1.0-M5/spring-test-6.1.0-M5.jar:/home/easy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-21.0.1/lib"/>
+    <property name="sun.java.command" value="/home/easy/git/fac-testcontainers-dan-vega/posts/target/surefire/surefirebooter-20240207155420747_3.jar /home/easy/git/fac-testcontainers-dan-vega/posts/target/surefire 2024-02-07T15-54-20_666-jvmRun1 surefire-20240207155420747_1tmp surefire_0-20240207155420747_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/easy/git/fac-testcontainers-dan-vega/posts/target/test-classes:/home/easy/git/fac-testcontainers-dan-vega/posts/target/classes:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.0-M3/spring-boot-starter-actuator-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0-M3/spring-boot-starter-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0-M3/spring-boot-starter-logging-3.2.0-M3.jar:/home/easy/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/easy/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/easy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/home/easy/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/easy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/easy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/easy/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.0-M3/spring-boot-actuator-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.0-M3/spring-boot-actuator-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar:/home/easy/.m2/repository/io/micrometer/micrometer-observation/1.12.0-M3/micrometer-observation-1.12.0-M3.jar:/home/easy/.m2/repository/io/micrometer/micrometer-commons/1.12.0-M3/micrometer-commons-1.12.0-M3.jar:/home/easy/.m2/repository/io/micrometer/micrometer-core/1.12.0-M3/micrometer-core-1.12.0-M3.jar:/home/easy/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/easy/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0-M3/spring-boot-starter-web-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0-M3/spring-boot-starter-json-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0-M3/spring-boot-starter-tomcat-3.2.0-M3.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.13/tomcat-embed-websocket-10.1.13.jar:/home/easy/.m2/repository/org/springframework/spring-web/6.1.0-M5/spring-web-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-beans/6.1.0-M5/spring-beans-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-webmvc/6.1.0-M5/spring-webmvc-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-aop/6.1.0-M5/spring-aop-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-context/6.1.0-M5/spring-context-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-expression/6.1.0-M5/spring-expression-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0-M3/spring-boot-starter-validation-3.2.0-M3.jar:/home/easy/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.13/tomcat-embed-el-10.1.13.jar:/home/easy/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/easy/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/easy/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/easy/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-data-jdbc/3.2.0-M3/spring-boot-starter-data-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0-M3/spring-boot-starter-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/easy/.m2/repository/org/springframework/spring-jdbc/6.1.0-M5/spring-jdbc-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-jdbc/3.2.0-M3/spring-data-jdbc-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-relational/3.2.0-M3/spring-data-relational-3.2.0-M3.jar:/home/easy/.m2/repository/com/github/jsqlparser/jsqlparser/4.6/jsqlparser-4.6.jar:/home/easy/.m2/repository/org/springframework/data/spring-data-commons/3.2.0-M3/spring-data-commons-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/spring-tx/6.1.0-M5/spring-tx-6.1.0-M5.jar:/home/easy/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.2.0/springdoc-openapi-starter-webmvc-ui-2.2.0.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.2.0/springdoc-openapi-starter-webmvc-api-2.2.0.jar:/home/easy/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.2.0/springdoc-openapi-starter-common-2.2.0.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.15/swagger-core-jakarta-2.2.15.jar:/home/easy/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.15/swagger-annotations-jakarta-2.2.15.jar:/home/easy/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.15/swagger-models-jakarta-2.2.15.jar:/home/easy/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.2/jackson-dataformat-yaml-2.15.2.jar:/home/easy/.m2/repository/org/webjars/swagger-ui/5.2.0/swagger-ui-5.2.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.0-M3/spring-boot-devtools-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot/3.2.0-M3/spring-boot-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0-M3/spring-boot-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-docker-compose/3.2.0-M3/spring-boot-docker-compose-3.2.0-M3.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/home/easy/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2.jar:/home/easy/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/easy/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-testcontainers/3.2.0-M3/spring-boot-testcontainers-3.2.0-M3.jar:/home/easy/.m2/repository/org/testcontainers/testcontainers/1.19.0/testcontainers-1.19.0.jar:/home/easy/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/easy/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/easy/.m2/repository/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0.jar:/home/easy/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/easy/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.3/docker-java-transport-zerodep-3.3.3.jar:/home/easy/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/easy/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/easy/.m2/repository/org/testcontainers/junit-jupiter/1.19.0/junit-jupiter-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/postgresql/1.19.0/postgresql-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/jdbc/1.19.0/jdbc-1.19.0.jar:/home/easy/.m2/repository/org/testcontainers/database-commons/1.19.0/database-commons-1.19.0.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0-M3/spring-boot-starter-test-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0-M3/spring-boot-test-3.2.0-M3.jar:/home/easy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0-M3/spring-boot-test-autoconfigure-3.2.0-M3.jar:/home/easy/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/easy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/easy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/easy/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/easy/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/easy/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/easy/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/easy/.m2/repository/net/bytebuddy/byte-buddy/1.14.8/byte-buddy-1.14.8.jar:/home/easy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/easy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/easy/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/easy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/easy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/easy/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/easy/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/easy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.8/byte-buddy-agent-1.14.8.jar:/home/easy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/easy/.m2/repository/org/mockito/mockito-junit-jupiter/5.5.0/mockito-junit-jupiter-5.5.0.jar:/home/easy/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/easy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/easy/.m2/repository/org/springframework/spring-core/6.1.0-M5/spring-core-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-jcl/6.1.0-M5/spring-jcl-6.1.0-M5.jar:/home/easy/.m2/repository/org/springframework/spring-test/6.1.0-M5/spring-test-6.1.0-M5.jar:/home/easy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="test" value="beforeConnection"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/easy"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-21.0.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/easy/git/fac-testcontainers-dan-vega/posts"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/easy/git/fac-testcontainers-dan-vega/posts/target/surefire/surefirebooter-20240207155420747_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-29"/>
+    <property name="user.name" value="easy"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.0-92-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/easy/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="catalina.home" value="/tmp/tomcat.0.11862130364585461980"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="/home/easy/git/fac-testcontainers-dan-vega/posts"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="42410"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="/tmp/tomcat.0.11862130364585461980"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="connectionEstablished" classname="dev.danvega.danson.post.checked.beforeConnection" time="0.862">
+    <system-out><![CDATA[15:54:21.431 [main] DEBUG org.testcontainers.utility.TestcontainersConfiguration - Testcontainers configuration overrides will be loaded from file:/home/easy/.testcontainers.properties
+15:54:21.437 [main] INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+15:54:21.620 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+15:54:21.621 [main] DEBUG org.testcontainers.dockerclient.DockerClientProviderStrategy - Trying out strategy: UnixSocketClientProviderStrategy
+15:54:21.710 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 
+15:54:21.731 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: preparing request execution
+15:54:21.734 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:21.737 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:21.737 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: target auth state: UNCHALLENGED
+15:54:21.738 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: proxy auth state: UNCHALLENGED
+15:54:21.738 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: acquiring connection with route {}->unix://localhost:2375
+15:54:21.738 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquiring endpoint (3 MINUTES)
+15:54:21.741 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 0; route allocated: 0 of 2147483647; total allocated: 0 of 2147483647]
+15:54:21.748 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.754 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: acquired ep-00000000
+15:54:21.754 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquired endpoint ep-00000000
+15:54:21.754 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: opening connection {}->unix://localhost:2375
+15:54:21.754 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: connecting endpoint (3 MINUTES)
+15:54:21.754 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connecting endpoint to unix://localhost:2375 (3 MINUTES)
+15:54:21.757 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connecting to localhost/127.0.0.1:2375
+15:54:21.757 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connection established /var/run/docker.sock<->/var/run/docker.sock
+15:54:21.758 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connected http-outgoing-0
+15:54:21.758 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: endpoint connected
+15:54:21.759 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: executing GET /v1.32/info HTTP/1.1
+15:54:21.759 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: start execution ex-00000001
+15:54:21.759 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/info HTTP/1.1
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:21.760 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:21.770 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:21.771 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:21 GMT
+15:54:21.771 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+15:54:21.774 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: connection can be kept alive for 3 MINUTES
+15:54:21.830 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: releasing valid endpoint
+15:54:21.830 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: releasing endpoint
+15:54:21.830 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:21.831 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.831 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+15:54:21.831 [main] DEBUG org.testcontainers.dockerclient.DockerClientProviderStrategy - Transport type: 'httpclient5', Docker host: 'unix:///var/run/docker.sock'
+15:54:21.831 [main] DEBUG org.testcontainers.dockerclient.DockerClientProviderStrategy - Checking Docker OS type for local Unix socket (unix:///var/run/docker.sock)
+15:54:21.832 [main] INFO  org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+15:54:21.832 [main] DEBUG org.testcontainers.DockerClientFactory - Docker info: {NGoroutines=38, Name=easy-ThinkPad-P50, Swarm={NodeID=, NodeAddr=, LocalNodeState=inactive, ControlAvailable=false, Error=, RemoteManagers=null}, RuncCommit={ID=v1.1.4-0-g5fd4c4d, Expected=v1.1.4-0-g5fd4c4d}, OSVersion=20.04, Runtimes={io.containerd.runc.v2={path=runc}, io.containerd.runtime.v1.linux={path=runc}, runc={path=runc}}, ID=IWK3:HJ3I:RJ5K:EMCZ:VDCI:VEUB:L4CF:KMHA:EEAT:YDGT:Y4T4:CJHW, DriverStatus=[[Backing Filesystem, extfs], [Supports d_type, true], [Native Overlay Diff, true], [userxattr, false]], BridgeNfIptables=true, LiveRestoreEnabled=false, SystemTime=2024-02-07T15:54:21.761951673+01:00, NoProxy=, Architecture=x86_64, NEventsListener=0, HttpsProxy=, Images=22, ContainersRunning=1, Labels=[], InitCommit={ID=de40ad0, Expected=de40ad0}, NFd=30, KernelVersion=5.15.0-92-generic, LoggingDriver=json-file, OSType=linux, SecurityOptions=[name=apparmor, name=seccomp,profile=default], ContainerdCommit={ID=1c90a442489720eec95342e1789ee8a5e1b9536f, Expected=1c90a442489720eec95342e1789ee8a5e1b9536f}, GenericResources=null, KernelMemory=true, OperatingSystem=Ubuntu 20.04.3 LTS, RegistryConfig={AllowNondistributableArtifactsCIDRs=[], AllowNondistributableArtifactsHostnames=[], InsecureRegistryCIDRs=[127.0.0.0/8], IndexConfigs={docker.io={Name=docker.io, Mirrors=[], Secure=true, Official=true}}, Mirrors=[]}, ServerVersion=20.10.21, OomKillDisable=true, CpuCfsQuota=true, Containers=5, Driver=overlay2, KernelMemoryTCP=true, IPv4Forwarding=true, ExperimentalBuild=false, DockerRootDir=/var/lib/docker, CPUSet=true, CpuCfsPeriod=true, DefaultRuntime=runc, CPUShares=true, Debug=false, NCPU=8, Plugins={Volume=[local], Network=[bridge, host, ipvlan, macvlan, null, overlay], Authorization=null, Log=[awslogs, fluentd, gcplogs, gelf, journald, json-file, local, logentries, splunk, syslog]}, SwapLimit=true, CgroupDriver=cgroupfs, ContainersPaused=0, MemTotal=33479938048, IndexServerAddress=https://index.docker.io/v1/, MemoryLimit=true, HttpProxy=, InitBinary=docker-init, CgroupVersion=1, PidsLimit=true, Isolation=, BridgeNfIp6tables=true, Warnings=null, ContainersStopped=4}
+15:54:21.833 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 
+15:54:21.834 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: preparing request execution
+15:54:21.834 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000002: target auth state: UNCHALLENGED
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000002: proxy auth state: UNCHALLENGED
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000002: acquiring connection with route {}->unix://localhost:2375
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: acquiring endpoint (3 MINUTES)
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: acquired ep-00000001
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: acquired endpoint ep-00000001
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000002: executing GET /v1.32/version HTTP/1.1
+15:54:21.835 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: start execution ex-00000002
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: executing exchange ex-00000002 over http-outgoing-0
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/version HTTP/1.1
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:21.836 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:21 GMT
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 825
+15:54:21.842 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000002: connection can be kept alive for 3 MINUTES
+15:54:21.849 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: releasing valid endpoint
+15:54:21.849 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: releasing endpoint
+15:54:21.849 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:21.850 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.850 [main] DEBUG org.testcontainers.DockerClientFactory - Docker version: {Components=[{Name=Engine, Version=20.10.21, Details={ApiVersion=1.41, Arch=amd64, BuildTime=2022-10-25T18:00:04.000000000+00:00, Experimental=false, GitCommit=3056208, GoVersion=go1.18.7, KernelVersion=5.15.0-92-generic, MinAPIVersion=1.12, Os=linux}}, {Name=containerd, Version=1.6.9, Details={GitCommit=1c90a442489720eec95342e1789ee8a5e1b9536f}}, {Name=runc, Version=1.1.4, Details={GitCommit=v1.1.4-0-g5fd4c4d}}, {Name=docker-init, Version=0.19.0, Details={GitCommit=de40ad0}}], KernelVersion=5.15.0-92-generic, ApiVersion=1.41, Platform={Name=Docker Engine - Community}, GitCommit=3056208, Os=linux, Version=20.10.21, MinAPIVersion=1.12, Arch=amd64, GoVersion=go1.18.7, BuildTime=2022-10-25T18:00:04.000000000+00:00}
+15:54:21.850 [main] INFO  org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 20.10.21
+  API Version: 1.41
+  Operating System: Ubuntu 20.04.3 LTS
+  Total Memory: 31928 MB
+15:54:21.859 [main] DEBUG org.testcontainers.utility.RyukResourceReaper - Ryuk is enabled
+15:54:21.861 [main] DEBUG org.testcontainers.utility.PrefixingImageNameSubstitutor - No prefix is configured
+15:54:21.861 [main] DEBUG org.testcontainers.utility.ImageNameSubstitutor - Did not find a substitute image for testcontainers/ryuk:0.5.1 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+15:54:21.863 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: ListImagesCmdImpl[filters=org.testcontainers.shaded.com.github.dockerjava.core.util.FiltersBuilder@0,imageNameFilter=<null>,showAll=false]
+15:54:21.866 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000003: preparing request execution
+15:54:21.866 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000003: target auth state: UNCHALLENGED
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000003: proxy auth state: UNCHALLENGED
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000003: acquiring connection with route {}->unix://localhost:2375
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000003: acquiring endpoint (3 MINUTES)
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000003: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.867 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000003: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000003: acquired ep-00000002
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000003: acquired endpoint ep-00000002
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000003: executing GET /v1.32/images/json HTTP/1.1
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000002: start execution ex-00000003
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000002: executing exchange ex-00000003 over http-outgoing-0
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/images/json HTTP/1.1
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:21.868 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:21 GMT
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+15:54:21.876 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000003: connection can be kept alive for 3 MINUTES
+15:54:21.887 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000002: releasing valid endpoint
+15:54:21.887 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000002: releasing endpoint
+15:54:21.888 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000002: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:21.888 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000002: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:21.891 [main] DEBUG org.testcontainers.images.AbstractImagePullPolicy - Using locally available and not pulling image: testcontainers/ryuk:0.5.1
+15:54:21.891 [main] DEBUG tc.testcontainers/ryuk:0.5.1 - Starting container: testcontainers/ryuk:0.5.1
+15:54:21.892 [main] DEBUG tc.testcontainers/ryuk:0.5.1 - Trying to start container: testcontainers/ryuk:0.5.1 (attempt 1/1)
+15:54:21.892 [main] DEBUG tc.testcontainers/ryuk:0.5.1 - Starting container: testcontainers/ryuk:0.5.1
+15:54:21.892 [main] INFO  tc.testcontainers/ryuk:0.5.1 - Creating container for image: testcontainers/ryuk:0.5.1
+15:54:21.896 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - Looking up auth config for image: testcontainers/ryuk:0.5.1 at registry: https://index.docker.io/v1/
+15:54:21.897 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - RegistryAuthLocator has configFile: /home/easy/.docker/config.json (exists) configEnv: DOCKER_AUTH_CONFIG (does not exist) and commandPathPrefix: 
+15:54:21.897 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - RegistryAuthLocator reading from configFile: /home/easy/.docker/config.json
+15:54:21.898 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - registryName [https://index.docker.io/v1/] for dockerImageName [testcontainers/ryuk:0.5.1]
+15:54:21.900 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - found existing auth config [AuthConfig{username=itdriveview, password=hidden non-blank value, auth=hidden non-blank value, email=null, registryAddress=https://index.docker.io/v1/, registryToken=blank}]
+15:54:21.900 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - Cached auth found: [AuthConfig{username=itdriveview, password=hidden non-blank value, auth=hidden non-blank value, email=null, registryAddress=https://index.docker.io/v1/, registryToken=blank}]
+15:54:21.900 [main] DEBUG org.testcontainers.dockerclient.AuthDelegatingDockerClientConfig - Effective auth config [AuthConfig{username=itdriveview, password=hidden non-blank value, auth=hidden non-blank value, email=null, registryAddress=https://index.docker.io/v1/, registryToken=blank}]
+15:54:21.911 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: org.testcontainers.shaded.com.github.dockerjava.core.command.CreateContainerCmdImpl@53667cbe[aliases=<null>,argsEscaped=<null>,attachStderr=<null>,attachStdin=<null>,attachStdout=<null>,authConfig=AuthConfig(username=itdriveview, email=null, registryAddress=https://index.docker.io/v1/, stackOrchestrator=null),cmd={},domainName=<null>,entrypoint=<null>,env={},exposedPorts=ExposedPorts(exposedPorts=[8080/tcp]),healthcheck=<null>,hostConfig=HostConfig(binds=[/var/run/docker.sock:/var/run/docker.sock:rw], blkioWeight=null, blkioWeightDevice=null, blkioDeviceReadBps=null, blkioDeviceWriteBps=null, blkioDeviceReadIOps=null, blkioDeviceWriteIOps=null, memorySwappiness=null, nanoCPUs=null, capAdd=null, capDrop=null, containerIDFile=null, cpuPeriod=null, cpuRealtimePeriod=null, cpuRealtimeRuntime=null, cpuShares=null, cpuQuota=null, cpusetCpus=null, cpusetMems=null, devices=null, deviceCgroupRules=null, deviceRequests=null, diskQuota=null, dns=null, dnsOptions=null, dnsSearch=null, extraHosts=[], groupAdd=null, ipcMode=null, cgroup=null, links=[], logConfig=LogConfig(type=null, config=null), lxcConf=null, memory=null, memorySwap=null, memoryReservation=null, kernelMemory=null, networkMode=null, oomKillDisable=null, init=null, autoRemove=true, oomScoreAdj=null, portBindings={8080/tcp=[Lcom.github.dockerjava.api.model.Ports$Binding;@64e1dd11}, privileged=true, publishAllPorts=null, readonlyRootfs=null, restartPolicy=null, ulimits=null, cpuCount=null, cpuPercent=null, ioMaximumIOps=null, ioMaximumBandwidth=null, volumesFrom=[], mounts=null, pidMode=null, isolation=null, securityOpts=null, storageOpt=null, cgroupParent=null, volumeDriver=null, shmSize=null, pidsLimit=null, runtime=null, tmpFs=null, utSMode=null, usernsMode=null, sysctls=null, consoleSize=null, cgroupnsMode=null),hostName=<null>,image=testcontainers/ryuk:0.5.1,ipv4Address=<null>,ipv6Address=<null>,labels={org.testcontainers=true, org.testcontainers.lang=java, org.testcontainers.version=1.19.0},macAddress=<null>,name=testcontainers-ryuk-628d2339-71a9-4a5e-abd2-d5a79d574b1d,networkDisabled=<null>,networkingConfig=<null>,onBuild=<null>,platform=<null>,portSpecs=<null>,shell=<null>,stdInOnce=<null>,stdinOpen=<null>,stopSignal=<null>,stopTimeout=<null>,tty=<null>,user=<null>,volumes=Volumes(volumes=[]),workingDir=<null>]
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000004: preparing request execution
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000004: target auth state: UNCHALLENGED
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000004: proxy auth state: UNCHALLENGED
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000004: acquiring connection with route {}->unix://localhost:2375
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000004: acquiring endpoint (3 MINUTES)
+15:54:22.026 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000004: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000004: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000004: acquired ep-00000003
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000004: acquired endpoint ep-00000003
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000004: executing POST /v1.32/containers/create?name=testcontainers-ryuk-628d2339-71a9-4a5e-abd2-d5a79d574b1d HTTP/1.1
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000003: start execution ex-00000004
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000003: executing exchange ex-00000004 over http-outgoing-0
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> POST /v1.32/containers/create?name=testcontainers-ryuk-628d2339-71a9-4a5e-abd2-d5a79d574b1d HTTP/1.1
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> X-Registry-Auth: eyJ1c2VybmFtZSI6Iml0ZHJpdmV2aWV3IiwicGFzc3dvcmQiOiIjQ29tcHV0aW5nMDYwNyIsImVtYWlsIjpudWxsLCJzZXJ2ZXJhZGRyZXNzIjoiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIiwiYXV0aCI6ImFYUmtjbWwyWlhacFpYYzZJME52YlhCMWRHbHVaekEyTURjPSIsInJlZ2lzdHJ5dG9rZW4iOm51bGwsImlkZW50aXR5dG9rZW4iOm51bGwsInN0YWNrT3JjaGVzdHJhdG9yIjpudWxsfQ==
+15:54:22.027 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> content-type: application/json
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Content-Length: 1954
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.028 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 201 Created
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.070 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 88
+15:54:22.071 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000004: connection can be kept alive for 3 MINUTES
+15:54:22.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000003: releasing valid endpoint
+15:54:22.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000003: releasing endpoint
+15:54:22.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000003: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:22.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000003: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.075 [main] INFO  tc.testcontainers/ryuk:0.5.1 - Container testcontainers/ryuk:0.5.1 is starting: 0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624
+15:54:22.076 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624
+15:54:22.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000005: preparing request execution
+15:54:22.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000005: target auth state: UNCHALLENGED
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000005: proxy auth state: UNCHALLENGED
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000005: acquiring connection with route {}->unix://localhost:2375
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000005: acquiring endpoint (3 MINUTES)
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000005: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000005: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000005: acquired ep-00000004
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000005: acquired endpoint ep-00000004
+15:54:22.078 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000005: executing POST /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/start HTTP/1.1
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000004: start execution ex-00000005
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000004: executing exchange ex-00000005 over http-outgoing-0
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> POST /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/start HTTP/1.1
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> content-type: application/json
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.415 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 204 No Content
+15:54:22.415 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.416 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.416 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.416 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.416 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.417 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000005: connection can be kept alive for 3 MINUTES
+15:54:22.417 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000004: releasing valid endpoint
+15:54:22.417 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000004: releasing endpoint
+15:54:22.417 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000004: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:22.418 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000004: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.430 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624,false
+15:54:22.436 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/json], queryParams={}}
+15:54:22.437 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000006: preparing request execution
+15:54:22.438 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.438 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.438 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000006: target auth state: UNCHALLENGED
+15:54:22.439 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000006: proxy auth state: UNCHALLENGED
+15:54:22.439 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000006: acquiring connection with route {}->unix://localhost:2375
+15:54:22.439 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000006: acquiring endpoint (3 MINUTES)
+15:54:22.439 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000006: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.440 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000006: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.440 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000006: acquired ep-00000005
+15:54:22.440 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000006: acquired endpoint ep-00000005
+15:54:22.441 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000006: executing GET /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/json HTTP/1.1
+15:54:22.441 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000005: start execution ex-00000006
+15:54:22.441 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000005: executing exchange ex-00000006 over http-outgoing-0
+15:54:22.441 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/json HTTP/1.1
+15:54:22.442 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:22.442 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.442 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.442 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.442 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.443 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.444 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:22.444 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.445 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:22.445 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.445 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.446 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.446 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.446 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+15:54:22.446 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000006: connection can be kept alive for 3 MINUTES
+15:54:22.571 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000005: releasing valid endpoint
+15:54:22.571 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000005: releasing endpoint
+15:54:22.571 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000005: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:22.571 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000005: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.574 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: sha256:ec913eeff75a6b5ed284cf17e186213a466ec10a8f471798318ffa0813b5d828
+15:54:22.576 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000007: preparing request execution
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000007: target auth state: UNCHALLENGED
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000007: proxy auth state: UNCHALLENGED
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000007: acquiring connection with route {}->unix://localhost:2375
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000007: acquiring endpoint (3 MINUTES)
+15:54:22.577 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000007: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000007: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000007: acquired ep-00000006
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000007: acquired endpoint ep-00000006
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000007: executing GET /v1.32/images/sha256:ec913eeff75a6b5ed284cf17e186213a466ec10a8f471798318ffa0813b5d828/json HTTP/1.1
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000006: start execution ex-00000007
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000006: executing exchange ex-00000007 over http-outgoing-0
+15:54:22.578 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/images/sha256:ec913eeff75a6b5ed284cf17e186213a466ec10a8f471798318ffa0813b5d828/json HTTP/1.1
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.579 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.580 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 2001
+15:54:22.581 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000007: connection can be kept alive for 3 MINUTES
+15:54:22.590 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000006: releasing valid endpoint
+15:54:22.590 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000006: releasing endpoint
+15:54:22.590 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000006: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:22.591 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000006: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.591 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 
+15:54:22.591 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000008: preparing request execution
+15:54:22.591 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.591 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000008: target auth state: UNCHALLENGED
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000008: proxy auth state: UNCHALLENGED
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000008: acquiring connection with route {}->unix://localhost:2375
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000008: acquiring endpoint (3 MINUTES)
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000008: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000008: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000008: acquired ep-00000007
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000008: acquired endpoint ep-00000007
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000008: executing GET /v1.32/version HTTP/1.1
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000007: start execution ex-00000008
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000007: executing exchange ex-00000008 over http-outgoing-0
+15:54:22.592 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/version HTTP/1.1
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> accept: application/json
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.593 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.599 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 825
+15:54:22.600 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000008: connection can be kept alive for 3 MINUTES
+15:54:22.601 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000007: releasing valid endpoint
+15:54:22.601 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000007: releasing endpoint
+15:54:22.601 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000007: connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:54:22.601 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000007: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.607 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000009: preparing request execution
+15:54:22.607 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.607 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.607 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000009: target auth state: UNCHALLENGED
+15:54:22.607 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000009: proxy auth state: UNCHALLENGED
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000009: acquiring connection with route {}->unix://localhost:2375
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000009: acquiring endpoint (3 MINUTES)
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000009: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000009: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000009: acquired ep-00000008
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000009: acquired endpoint ep-00000008
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000009: executing GET /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000008: start execution ex-00000009
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000008: executing exchange ex-00000009 over http-outgoing-0
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /v1.32/containers/0a0814b0edd45dc49db97e0cf168593556f56c39b345c57b61abd2a6474a1624/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: tc-java/1.19.0
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:2375
+15:54:22.608 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Api-Version: 1.41
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Docker-Experimental: false
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Ostype: linux
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Server: Docker/20.10.21 (linux)
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+15:54:22.609 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000009: connection can be kept alive for 3 MINUTES
+15:54:22.611 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024/02/07 14:54:22 Pinging Docker...
+15:54:22.611 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024/02/07 14:54:22 Started!
+15:54:22.612 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000008: cancel
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection - http-outgoing-0: close connection IMMEDIATE
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000008: endpoint closed
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000008: discarding endpoint
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000008: releasing endpoint
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000008: connection is not kept alive
+15:54:22.613 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000008: connection released [route: {}->unix://localhost:2375][total available: 0; route allocated: 0 of 2147483647; total allocated: 0 of 2147483647]
+15:54:22.613 [main] INFO  tc.testcontainers/ryuk:0.5.1 - Container testcontainers/ryuk:0.5.1 started in PT0.754060438S
+15:54:22.612 [docker-java-stream-484510544] DEBUG com.github.dockerjava.zerodep.ApacheDockerHttpClientImpl$ApacheResponse - Failed to close the response
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpenAndConnected(SocketChannelImpl.java:222)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingRead(SocketChannelImpl.java:1306)
+	at java.base/sun.nio.ch.SocketInputStream.read(SocketInputStream.java:70)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:149)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:261)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.close(ChunkedInputStream.java:314)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.io.Closer.close(Closer.java:48)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.IncomingHttpEntity.close(IncomingHttpEntity.java:111)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.io.entity.HttpEntityWrapper.close(HttpEntityWrapper.java:120)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.io.Closer.close(Closer.java:48)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.message.BasicClassicHttpResponse.close(BasicClassicHttpResponse.java:93)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.CloseableHttpResponse.close(CloseableHttpResponse.java:200)
+	at com.github.dockerjava.zerodep.ApacheDockerHttpClientImpl$ApacheResponse.close(ApacheDockerHttpClientImpl.java:256)
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+15:54:22.618 [testcontainers-ryuk] DEBUG org.testcontainers.utility.ResourceReaper - Sending 'label=org.testcontainers%3Dtrue&label=org.testcontainers.lang%3Djava&label=org.testcontainers.version%3D1.19.0&label=org.testcontainers.sessionId%3D628d2339-71a9-4a5e-abd2-d5a79d574b1d' to Ryuk
+15:54:22.618 [testcontainers-ryuk] DEBUG org.testcontainers.utility.RyukResourceReaper - Received 'ACK' from Ryuk
+15:54:22.618 [main] INFO  org.testcontainers.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+15:54:22.619 [main] DEBUG org.testcontainers.DockerClientFactory - Checks are enabled
+15:54:22.619 [main] INFO  org.testcontainers.DockerClientFactory - Checking the system...
+15:54:22.619 [main] INFO  org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+15:54:22.620 [main] DEBUG org.testcontainers.utility.PrefixingImageNameSubstitutor - No prefix is configured
+15:54:22.620 [main] DEBUG org.testcontainers.utility.ImageNameSubstitutor - Did not find a substitute image for postgres:16.0 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+15:54:22.620 [main] DEBUG org.testcontainers.images.AbstractImagePullPolicy - Using locally available and not pulling image: postgres:16.0
+15:54:22.621 [main] DEBUG tc.postgres:16.0 - Starting container: postgres:16.0
+15:54:22.621 [main] DEBUG tc.postgres:16.0 - Trying to start container: postgres:16.0 (attempt 1/1)
+15:54:22.621 [main] DEBUG tc.postgres:16.0 - Starting container: postgres:16.0
+15:54:22.621 [main] INFO  tc.postgres:16.0 - Creating container for image: postgres:16.0
+15:54:22.621 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - Looking up auth config for image: postgres:16.0 at registry: https://index.docker.io/v1/
+15:54:22.621 [main] DEBUG org.testcontainers.utility.RegistryAuthLocator - Cached auth found: [AuthConfig{username=itdriveview, password=hidden non-blank value, auth=hidden non-blank value, email=null, registryAddress=https://index.docker.io/v1/, registryToken=blank}]
+15:54:22.621 [main] DEBUG org.testcontainers.dockerclient.AuthDelegatingDockerClientConfig - Effective auth config [AuthConfig{username=itdriveview, password=hidden non-blank value, auth=hidden non-blank value, email=null, registryAddress=https://index.docker.io/v1/, registryToken=blank}]
+15:54:22.622 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: org.testcontainers.shaded.com.github.dockerjava.core.command.CreateContainerCmdImpl@7435a578[aliases=<null>,argsEscaped=<null>,attachStderr=<null>,attachStdin=<null>,attachStdout=<null>,authConfig=AuthConfig(username=itdriveview, email=null, registryAddress=https://index.docker.io/v1/, stackOrchestrator=null),cmd={postgres,-c,fsync=off},domainName=<null>,entrypoint=<null>,env={POSTGRES_USER=test,POSTGRES_PASSWORD=test,POSTGRES_DB=test},exposedPorts=ExposedPorts(exposedPorts=[5432/tcp]),healthcheck=<null>,hostConfig=HostConfig(binds=[], blkioWeight=null, blkioWeightDevice=null, blkioDeviceReadBps=null, blkioDeviceWriteBps=null, blkioDeviceReadIOps=null, blkioDeviceWriteIOps=null, memorySwappiness=null, nanoCPUs=null, capAdd=null, capDrop=null, containerIDFile=null, cpuPeriod=null, cpuRealtimePeriod=null, cpuRealtimeRuntime=null, cpuShares=null, cpuQuota=null, cpusetCpus=null, cpusetMems=null, devices=null, deviceCgroupRules=null, deviceRequests=null, diskQuota=null, dns=null, dnsOptions=null, dnsSearch=null, extraHosts=[], groupAdd=null, ipcMode=null, cgroup=null, links=[], logConfig=LogConfig(type=null, config=null), lxcConf=null, memory=null, memorySwap=null, memoryReservation=null, kernelMemory=null, networkMode=null, oomKillDisable=null, init=null, autoRemove=null, oomScoreAdj=null, portBindings={5432/tcp=[Lcom.github.dockerjava.api.model.Ports$Binding;@70e3f36f}, privileged=null, publishAllPorts=null, readonlyRootfs=null, restartPolicy=null, ulimits=null, cpuCount=null, cpuPercent=null, ioMaximumIOps=null, ioMaximumBandwidth=null, volumesFrom=[], mounts=null, pidMode=null, isolation=null, securityOpts=null, storageOpt=null, cgroupParent=null, volumeDriver=null, shmSize=null, pidsLimit=null, runtime=null, tmpFs=null, utSMode=null, usernsMode=null, sysctls=null, consoleSize=null, cgroupnsMode=null),hostName=<null>,image=postgres:16.0,ipv4Address=<null>,ipv6Address=<null>,labels={org.testcontainers=true, org.testcontainers.lang=java, org.testcontainers.version=1.19.0, org.testcontainers.sessionId=628d2339-71a9-4a5e-abd2-d5a79d574b1d},macAddress=<null>,name=<null>,networkDisabled=<null>,networkingConfig=<null>,onBuild=<null>,platform=<null>,portSpecs=<null>,shell=<null>,stdInOnce=<null>,stdinOpen=<null>,stopSignal=<null>,stopTimeout=<null>,tty=<null>,user=<null>,volumes=Volumes(volumes=[]),workingDir=<null>]
+15:54:22.624 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000A: preparing request execution
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000A: target auth state: UNCHALLENGED
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000A: proxy auth state: UNCHALLENGED
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000A: acquiring connection with route {}->unix://localhost:2375
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000A: acquiring endpoint (3 MINUTES)
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000A: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 0; route allocated: 0 of 2147483647; total allocated: 0 of 2147483647]
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000A: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.625 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000A: acquired ep-00000009
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000A: acquired endpoint ep-00000009
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000A: opening connection {}->unix://localhost:2375
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000009: connecting endpoint (3 MINUTES)
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: connecting endpoint to unix://localhost:2375 (3 MINUTES)
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1: connecting to localhost/127.0.0.1:2375
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1: connection established /var/run/docker.sock<->/var/run/docker.sock
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: connected http-outgoing-1
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000009: endpoint connected
+15:54:22.626 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000A: executing POST /v1.32/containers/create HTTP/1.1
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000009: start execution ex-0000000A
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: executing exchange ex-0000000A over http-outgoing-1
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> POST /v1.32/containers/create HTTP/1.1
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> X-Registry-Auth: eyJ1c2VybmFtZSI6Iml0ZHJpdmV2aWV3IiwicGFzc3dvcmQiOiIjQ29tcHV0aW5nMDYwNyIsImVtYWlsIjpudWxsLCJzZXJ2ZXJhZGRyZXNzIjoiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIiwiYXV0aCI6ImFYUmtjbWwyWlhacFpYYzZJME52YlhCMWRHbHVaekEyTURjPSIsInJlZ2lzdHJ5dG9rZW4iOm51bGwsImlkZW50aXR5dG9rZW4iOm51bGwsInN0YWNrT3JjaGVzdHJhdG9yIjpudWxsfQ==
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> accept: application/json
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> content-type: application/json
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Content-Length: 2057
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:22.627 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 201 Created
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: application/json
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:22.669 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:22 GMT
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 88
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000A: connection can be kept alive for 3 MINUTES
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000009: releasing valid endpoint
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: releasing endpoint
+15:54:22.670 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:54:22.671 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000009: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.671 [main] INFO  tc.postgres:16.0 - Container postgres:16.0 is starting: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0
+15:54:22.671 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0
+15:54:22.671 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000B: preparing request execution
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000B: target auth state: UNCHALLENGED
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000B: proxy auth state: UNCHALLENGED
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000B: acquiring connection with route {}->unix://localhost:2375
+15:54:22.672 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000B: acquiring endpoint (3 MINUTES)
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000B: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000B: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000B: acquired ep-0000000A
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000B: acquired endpoint ep-0000000A
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000B: executing POST /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/start HTTP/1.1
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000A: start execution ex-0000000B
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000A: executing exchange ex-0000000B over http-outgoing-1
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> POST /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/start HTTP/1.1
+15:54:22.673 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> accept: application/json
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> content-type: application/json
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:22.674 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:23.067 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 204 No Content
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:23 GMT
+15:54:23.068 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000B: connection can be kept alive for 3 MINUTES
+15:54:23.069 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000A: releasing valid endpoint
+15:54:23.069 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000A: releasing endpoint
+15:54:23.069 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000A: connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:54:23.069 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000A: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.070 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0,false
+15:54:23.071 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json], queryParams={}}
+15:54:23.071 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000C: preparing request execution
+15:54:23.072 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:23.072 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:23.072 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000C: target auth state: UNCHALLENGED
+15:54:23.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000C: proxy auth state: UNCHALLENGED
+15:54:23.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000C: acquiring connection with route {}->unix://localhost:2375
+15:54:23.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000C: acquiring endpoint (3 MINUTES)
+15:54:23.073 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000C: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.074 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000C: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.075 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000C: acquired ep-0000000B
+15:54:23.075 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000C: acquired endpoint ep-0000000B
+15:54:23.075 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000C: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:23.075 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000B: start execution ex-0000000C
+15:54:23.075 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000B: executing exchange ex-0000000C over http-outgoing-1
+15:54:23.076 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:23.076 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> accept: application/json
+15:54:23.076 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:23.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:23.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:23.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:23.077 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: application/json
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:23.079 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:23.080 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:23 GMT
+15:54:23.080 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+15:54:23.081 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000C: connection can be kept alive for 3 MINUTES
+15:54:23.092 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000B: releasing valid endpoint
+15:54:23.092 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000B: releasing endpoint
+15:54:23.093 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000B: connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:54:23.093 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000B: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.094 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: sha256:fbd1be2cbb1f55a77e9e4124c36f4f7e7d9370de26d4325688cc953008984c81
+15:54:23.095 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000D: preparing request execution
+15:54:23.095 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000D: target auth state: UNCHALLENGED
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000D: proxy auth state: UNCHALLENGED
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000D: acquiring connection with route {}->unix://localhost:2375
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000D: acquiring endpoint (3 MINUTES)
+15:54:23.096 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000D: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.097 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000D: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.097 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000D: acquired ep-0000000C
+15:54:23.097 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000D: acquired endpoint ep-0000000C
+15:54:23.097 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000D: executing GET /v1.32/images/sha256:fbd1be2cbb1f55a77e9e4124c36f4f7e7d9370de26d4325688cc953008984c81/json HTTP/1.1
+15:54:23.098 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000C: start execution ex-0000000D
+15:54:23.098 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000C: executing exchange ex-0000000D over http-outgoing-1
+15:54:23.098 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /v1.32/images/sha256:fbd1be2cbb1f55a77e9e4124c36f4f7e7d9370de26d4325688cc953008984c81/json HTTP/1.1
+15:54:23.098 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> accept: application/json
+15:54:23.098 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:23.099 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:23.099 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:23.099 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:23.099 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:23.103 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+15:54:23.103 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:23.104 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: application/json
+15:54:23.104 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:23.104 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:23.104 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:23.105 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:23 GMT
+15:54:23.105 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+15:54:23.105 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000D: connection can be kept alive for 3 MINUTES
+15:54:23.109 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000C: releasing valid endpoint
+15:54:23.109 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000C: releasing endpoint
+15:54:23.110 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000C: connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:54:23.110 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000C: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.110 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 
+15:54:23.111 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000E: preparing request execution
+15:54:23.111 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:23.111 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:23.111 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000E: target auth state: UNCHALLENGED
+15:54:23.112 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000E: proxy auth state: UNCHALLENGED
+15:54:23.112 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000E: acquiring connection with route {}->unix://localhost:2375
+15:54:23.112 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000E: acquiring endpoint (3 MINUTES)
+15:54:23.112 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000E: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.113 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000E: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.113 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000E: acquired ep-0000000D
+15:54:23.113 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000E: acquired endpoint ep-0000000D
+15:54:23.114 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000E: executing GET /v1.32/version HTTP/1.1
+15:54:23.114 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000D: start execution ex-0000000E
+15:54:23.114 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000D: executing exchange ex-0000000E over http-outgoing-1
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /v1.32/version HTTP/1.1
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> accept: application/json
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:23.115 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:23.134 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+15:54:23.135 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:23.135 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: application/json
+15:54:23.135 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:23.135 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:23.135 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:23.136 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:23 GMT
+15:54:23.136 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 825
+15:54:23.136 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000E: connection can be kept alive for 3 MINUTES
+15:54:23.137 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000D: releasing valid endpoint
+15:54:23.137 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000D: releasing endpoint
+15:54:23.138 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000D: connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:54:23.138 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000D: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.140 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000F: preparing request execution
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000F: target auth state: UNCHALLENGED
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000F: proxy auth state: UNCHALLENGED
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000F: acquiring connection with route {}->unix://localhost:2375
+15:54:23.141 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000F: acquiring endpoint (3 MINUTES)
+15:54:23.142 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000F: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.142 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000F: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:23.142 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000F: acquired ep-0000000E
+15:54:23.143 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000F: acquired endpoint ep-0000000E
+15:54:23.143 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000F: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:23.143 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000E: start execution ex-0000000F
+15:54:23.143 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000E: executing exchange ex-0000000F over http-outgoing-1
+15:54:23.143 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:23.144 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:23.144 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: tc-java/1.19.0
+15:54:23.144 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:23.144 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:2375
+15:54:23.144 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+15:54:23.145 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Api-Version: 1.41
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Docker-Experimental: false
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Ostype: linux
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Server: Docker/20.10.21 (linux)
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Wed, 07 Feb 2024 14:54:23 GMT
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+15:54:23.146 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000F: connection can be kept alive for 3 MINUTES
+15:54:23.203 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The files belonging to this database system will be owned by user "postgres".
+15:54:23.204 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
+15:54:23.204 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting dynamic shared memory implementation ... posix
+15:54:23.205 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: creating subdirectories ... ok
+15:54:23.205 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:23.206 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: Data page checksums are disabled.
+15:54:23.206 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:23.206 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The default text search configuration will be set to "english".
+15:54:23.207 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The default database encoding has accordingly been set to "UTF8".
+15:54:23.207 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The database cluster will be initialized with locale "en_US.utf8".
+15:54:23.207 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:23.208 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: This user must also own the server process.
+15:54:23.230 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting default max_connections ... 100
+15:54:23.258 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting default shared_buffers ... 128MB
+15:54:23.282 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting default time zone ... Etc/UTC
+15:54:23.293 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: creating configuration files ... ok
+15:54:23.456 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: running bootstrap script ... ok
+15:54:23.834 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: performing post-bootstrap initialization ... ok
+15:54:24.101 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: syncing data to disk ... ok
+15:54:24.102 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
+15:54:24.103 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+15:54:24.103 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: initdb: warning: enabling "trust" authentication for local connections
+15:54:24.103 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.104 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.104 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: Success. You can now start the database server using:
+15:54:24.104 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.104 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.178 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: waiting for server to start....2024-02-07 14:54:24.178 UTC [47] LOG:  starting PostgreSQL 16.0 (Debian 16.0-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+15:54:24.179 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.178 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+15:54:24.189 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.184 UTC [47] LOG:  database system is ready to accept connections
+15:54:24.189 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.180 UTC [50] LOG:  database system was shut down at 2024-02-07 14:54:23 UTC
+15:54:24.254 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:  done
+15:54:24.255 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: server started
+15:54:24.397 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: CREATE DATABASE
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.401 UTC [48] LOG:  checkpoint starting: shutdown immediate
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.401 UTC [48] LOG:  shutting down
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.400 UTC [47] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: .2024-02-07 14:54:24.398 UTC [47] LOG:  aborting any active transactions
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: waiting for server to shut down...2024-02-07 14:54:24.398 UTC [47] LOG:  received fast shutdown request
+15:54:24.407 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.408 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+15:54:24.408 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.408 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.418 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.416 UTC [47] LOG:  database system is shut down
+15:54:24.418 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 2024-02-07 14:54:24.410 UTC [48] LOG:  checkpoint complete: wrote 923 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4257 kB, estimate=4257 kB; lsn=0/19130C8, redo lsn=0/19130C8
+15:54:24.499 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:  done
+15:54:24.500 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: server stopped
+15:54:24.511 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.511 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: PostgreSQL init process complete; ready for start up.
+15:54:24.511 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+15:54:24.538 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  starting PostgreSQL 16.0 (Debian 16.0-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+15:54:24.538 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+15:54:24.538 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+15:54:24.538 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+15:54:24.549 [main] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 2024-02-07 14:54:24.543 UTC [1] LOG:  database system is ready to accept connections
+15:54:24.549 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000E: cancel
+15:54:24.549 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection - http-outgoing-1: close connection IMMEDIATE
+15:54:24.549 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000E: endpoint closed
+15:54:24.549 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000E: discarding endpoint
+15:54:24.549 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000E: releasing endpoint
+15:54:24.549 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.ApacheDockerHttpClientImpl$ApacheResponse - Failed to close the response
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpenAndConnected(SocketChannelImpl.java:222)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingRead(SocketChannelImpl.java:1306)
+	at java.base/sun.nio.ch.SocketInputStream.read(SocketInputStream.java:70)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:149)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:261)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.ChunkedInputStream.close(ChunkedInputStream.java:314)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.io.Closer.close(Closer.java:48)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.impl.io.IncomingHttpEntity.close(IncomingHttpEntity.java:111)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.io.entity.HttpEntityWrapper.close(HttpEntityWrapper.java:120)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.io.Closer.close(Closer.java:48)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.core5.http.message.BasicClassicHttpResponse.close(BasicClassicHttpResponse.java:93)
+	at com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.CloseableHttpResponse.close(CloseableHttpResponse.java:200)
+	at com.github.dockerjava.zerodep.ApacheDockerHttpClientImpl$ApacheResponse.close(ApacheDockerHttpClientImpl.java:256)
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+15:54:24.550 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000E: connection is not kept alive
+15:54:24.550 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000E: connection released [route: {}->unix://localhost:2375][total available: 0; route allocated: 0 of 2147483647; total allocated: 0 of 2147483647]
+15:54:24.550 [main] INFO  tc.postgres:16.0 - Container postgres:16.0 started in PT1.929937115S
+15:54:24.550 [main] INFO  tc.postgres:16.0 - Container is started (JDBC URL: jdbc:postgresql://localhost:49221/test?loggerLevel=OFF)
+15:54:24.631 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [dev.danvega.danson.post.checked.beforeConnection]: beforeConnection does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:54:24.764 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration dev.danvega.danson.Application for test class dev.danvega.danson.post.checked.beforeConnection
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.2.0-M3)
+
+15:54:25.027 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+===========> : jdbc:postgresql://localhost:49221/test?loggerLevel=OFF
+===========> : test
+===========> : test
+15:54:25.055 [main] INFO  dev.danvega.danson.post.checked.beforeConnection - Starting beforeConnection using Java 21.0.1 with PID 42410 (started by easy in /home/easy/git/fac-testcontainers-dan-vega/posts)
+15:54:25.056 [main] INFO  dev.danvega.danson.post.checked.beforeConnection - No active profile set, falling back to 1 default profile: "default"
+15:54:25.876 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+15:54:25.921 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JDBC repository interfaces.
+15:54:26.353 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+15:54:26.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+15:54:26.361 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:54:26.361 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+15:54:26.433 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:54:26.434 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1343 ms
+15:54:26.644 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:54:26.798 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ef04613
+15:54:26.799 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:54:27.648 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:54:27.743 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+15:54:27.757 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 35413 (http) with context path ''
+15:54:27.774 [main] INFO  dev.danvega.danson.post.checked.beforeConnection - Started beforeConnection in 2.908 seconds (process running for 6.966)
+15:54:27.914 [main] INFO  dev.danvega.danson.post.PostDataLoader - Loading posts into database from JSON: /data/posts.json
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000010: preparing request execution
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000010: target auth state: UNCHALLENGED
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000010: proxy auth state: UNCHALLENGED
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000010: acquiring connection with route {}->unix://localhost:2375
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000010: acquiring endpoint (3 MINUTES)
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000010: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 0; route allocated: 0 of 2147483647; total allocated: 0 of 2147483647]
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000010: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000010: acquired ep-0000000F
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000010: acquired endpoint ep-0000000F
+15:54:28.849 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000010: opening connection {}->unix://localhost:2375
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000F: connecting endpoint (3 MINUTES)
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000F: connecting endpoint to unix://localhost:2375 (3 MINUTES)
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-2: connecting to localhost/127.0.0.1:2375
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-2: connection established /var/run/docker.sock<->/var/run/docker.sock
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000F: connected http-outgoing-2
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000F: endpoint connected
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000010: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000F: start execution ex-00000010
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000F: executing exchange ex-00000010 over http-outgoing-2
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/logs?stdout=true&stderr=true&follow=true&since=0 HTTP/1.1
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> User-Agent: tc-java/1.19.0
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> Host: localhost:2375
+15:54:28.850 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 >> Connection: keep-alive
+15:54:28.851 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0,false
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Api-Version: 1.41
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Docker-Experimental: false
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Ostype: linux
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Server: Docker/20.10.21 (linux)
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Date: Wed, 07 Feb 2024 14:54:28 GMT
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-2 << Transfer-Encoding: chunked
+15:54:28.851 [docker-java-stream-1457537539] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000010: connection can be kept alive for 3 MINUTES
+15:54:28.851 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json], queryParams={}}
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000011: preparing request execution
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000011: target auth state: UNCHALLENGED
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000011: proxy auth state: UNCHALLENGED
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000011: acquiring connection with route {}->unix://localhost:2375
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000011: acquiring endpoint (3 MINUTES)
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000011: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 0; route allocated: 1 of 2147483647; total allocated: 1 of 2147483647]
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000011: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.852 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: The files belonging to this database system will be owned by user "postgres".
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000011: acquired ep-00000010
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000011: acquired endpoint ep-00000010
+15:54:28.852 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: This user must also own the server process.
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000011: opening connection {}->unix://localhost:2375
+15:54:28.852 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.852 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000010: connecting endpoint (3 MINUTES)
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: The database cluster will be initialized with locale "en_US.utf8".
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: connecting endpoint to unix://localhost:2375 (3 MINUTES)
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: The default database encoding has accordingly been set to "UTF8".
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: The default text search configuration will be set to "english".
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: Data page checksums are disabled.
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-3: connecting to localhost/127.0.0.1:2375
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-3: connection established /var/run/docker.sock<->/var/run/docker.sock
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: creating subdirectories ... ok
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: connected http-outgoing-3
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000010: endpoint connected
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: selecting dynamic shared memory implementation ... posix
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000011: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: selecting default max_connections ... 100
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000010: start execution ex-00000011
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: selecting default shared_buffers ... 128MB
+15:54:28.853 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: executing exchange ex-00000011 over http-outgoing-3
+15:54:28.853 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: selecting default time zone ... Etc/UTC
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: creating configuration files ... ok
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> accept: application/json
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: running bootstrap script ... ok
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> User-Agent: tc-java/1.19.0
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: performing post-bootstrap initialization ... ok
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Host: localhost:2375
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: syncing data to disk ... ok
+15:54:28.854 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Connection: keep-alive
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: Success. You can now start the database server using:
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: initdb: warning: enabling "trust" authentication for local connections
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+15:54:28.854 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: waiting for server to start....2024-02-07 14:54:24.178 UTC [47] LOG:  starting PostgreSQL 16.0 (Debian 16.0-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.178 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.180 UTC [50] LOG:  database system was shut down at 2024-02-07 14:54:23 UTC
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Api-Version: 1.41
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Content-Type: application/json
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.184 UTC [47] LOG:  database system is ready to accept connections
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Docker-Experimental: false
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Ostype: linux
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT:  done
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Server: Docker/20.10.21 (linux)
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Date: Wed, 07 Feb 2024 14:54:28 GMT
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: server started
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Transfer-Encoding: chunked
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: CREATE DATABASE
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.855 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000011: connection can be kept alive for 3 MINUTES
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: waiting for server to shut down...2024-02-07 14:54:24.398 UTC [47] LOG:  received fast shutdown request
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: .2024-02-07 14:54:24.398 UTC [47] LOG:  aborting any active transactions
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.400 UTC [47] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.401 UTC [48] LOG:  shutting down
+15:54:28.855 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.401 UTC [48] LOG:  checkpoint starting: shutdown immediate
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.410 UTC [48] LOG:  checkpoint complete: wrote 923 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4257 kB, estimate=4257 kB; lsn=0/19130C8, redo lsn=0/19130C8
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 2024-02-07 14:54:24.416 UTC [47] LOG:  database system is shut down
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT:  done
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: server stopped
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: PostgreSQL init process complete; ready for start up.
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDOUT: 
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  starting PostgreSQL 16.0 (Debian 16.0-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.537 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+15:54:28.856 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.540 UTC [63] LOG:  database system was shut down at 2024-02-07 14:54:24 UTC
+15:54:28.857 [docker-java-stream-1457537539] INFO  docker logs postgres 1 - STDERR: 2024-02-07 14:54:24.543 UTC [1] LOG:  database system is ready to accept connections
+15:54:28.857 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000010: releasing valid endpoint
+15:54:28.857 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: releasing endpoint
+15:54:28.857 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: connection http-outgoing-3 can be kept alive for 3 MINUTES
+15:54:28.857 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000010: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.857 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0,false
+15:54:28.858 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json], queryParams={}}
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000012: preparing request execution
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000012: target auth state: UNCHALLENGED
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000012: proxy auth state: UNCHALLENGED
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000012: acquiring connection with route {}->unix://localhost:2375
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000012: acquiring endpoint (3 MINUTES)
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000012: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.858 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000012: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000012: acquired ep-00000011
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000012: acquired endpoint ep-00000011
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000012: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000011: start execution ex-00000012
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000011: executing exchange ex-00000012 over http-outgoing-3
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> accept: application/json
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> User-Agent: tc-java/1.19.0
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Host: localhost:2375
+15:54:28.859 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Connection: keep-alive
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Api-Version: 1.41
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Content-Type: application/json
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Docker-Experimental: false
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Ostype: linux
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Server: Docker/20.10.21 (linux)
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Date: Wed, 07 Feb 2024 14:54:28 GMT
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Transfer-Encoding: chunked
+15:54:28.860 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000012: connection can be kept alive for 3 MINUTES
+15:54:28.862 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000011: releasing valid endpoint
+15:54:28.862 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000011: releasing endpoint
+15:54:28.862 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000011: connection http-outgoing-3 can be kept alive for 3 MINUTES
+15:54:28.862 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000011: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.901 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0,false
+15:54:28.901 [main] DEBUG org.testcontainers.shaded.com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json], queryParams={}}
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000013: preparing request execution
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000013: target auth state: UNCHALLENGED
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000013: proxy auth state: UNCHALLENGED
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000013: acquiring connection with route {}->unix://localhost:2375
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000013: acquiring endpoint (3 MINUTES)
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000013: endpoint lease request (3 MINUTES) [route: {}->unix://localhost:2375][total available: 1; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000013: endpoint leased [route: {}->unix://localhost:2375][total available: 0; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000013: acquired ep-00000012
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000013: acquired endpoint ep-00000012
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000013: executing GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000012: start execution ex-00000013
+15:54:28.902 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000012: executing exchange ex-00000013 over http-outgoing-3
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> GET /v1.32/containers/a6a5f5627a2dc26f479e38c4496ce6f2f3fc13bdbbe6bd93ca5d2aa078a7b9c0/json HTTP/1.1
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> accept: application/json
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> x-tc-sid: 628d2339-71a9-4a5e-abd2-d5a79d574b1d
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> User-Agent: tc-java/1.19.0
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Accept-Encoding: gzip, x-gzip, deflate
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Host: localhost:2375
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 >> Connection: keep-alive
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Api-Version: 1.41
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Content-Type: application/json
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Docker-Experimental: false
+15:54:28.903 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Ostype: linux
+15:54:28.904 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Server: Docker/20.10.21 (linux)
+15:54:28.904 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Date: Wed, 07 Feb 2024 14:54:28 GMT
+15:54:28.904 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.headers - http-outgoing-3 << Transfer-Encoding: chunked
+15:54:28.904 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000013: connection can be kept alive for 3 MINUTES
+15:54:28.905 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000012: releasing valid endpoint
+15:54:28.905 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000012: releasing endpoint
+15:54:28.906 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000012: connection http-outgoing-3 can be kept alive for 3 MINUTES
+15:54:28.906 [main] DEBUG com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000012: connection released [route: {}->unix://localhost:2375][total available: 1; route allocated: 2 of 2147483647; total allocated: 2 of 2147483647]
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/easy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.8/byte-buddy-agent-1.14.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
