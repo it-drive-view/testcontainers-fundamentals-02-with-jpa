@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dev.danvega.danson.post.checked.NewTechnic
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.184 s -- in dev.danvega.danson.post.checked.NewTechnic
