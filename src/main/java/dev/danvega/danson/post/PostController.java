@@ -40,11 +40,11 @@ class PostController {
     Post update(@PathVariable Integer id, @RequestBody Post post) {
         Optional<Post> existing = repository.findById(id);
         if(existing.isPresent()) {
-            Post updatedPost = new Post(existing.get().id(),
-                    existing.get().userId(),
-                    post.title(),
-                    post.body(),
-                    existing.get().version());
+            Post updatedPost = new Post(existing.get().getId(),
+                    existing.get().getUserId(),
+                    post.getTitle(),
+                    post.getBody(),
+                    existing.get().getVersion());
 
             return repository.save(updatedPost);
         } else {
