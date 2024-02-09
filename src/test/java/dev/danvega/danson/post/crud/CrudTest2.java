@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 // 1- si je mets cette annotation, alors
 //@SpringBootTest
 // 2- si je mets cell-ci, tout est OK
-@DataJdbcTest
+@DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 // TODO pourquoi cette annotation ci-dessous.. ?
 // @Transactional
