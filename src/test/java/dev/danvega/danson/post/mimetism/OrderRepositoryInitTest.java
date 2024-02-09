@@ -41,9 +41,6 @@ class OrderRepositoryInitTest {
 
     @Test
     void shouldReturnAllOrders() {
-        Iterable<Order> all = orderRepository.findAll();
-
-
         List<Order> orders = orderRepository.findAll();
         assertEquals(3, orders.size());
     }

@@ -1,7 +1,8 @@
 package dev.danvega.danson.order;
 
-import jakarta.persistence.*;
 import org.hibernate.annotations.Type;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "orders")
