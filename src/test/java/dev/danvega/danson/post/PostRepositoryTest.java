@@ -47,7 +47,7 @@ public class PostRepositoryTest {
     @Test
     void shouldReturnPostByTitle() {
         Post post = postRepository.findByTitle("Hello, World!").orElseThrow();
-        assertEquals("Hello, World!", post.title(), "Post title should be 'Hello, World!'");
+        assertEquals("Hello, World!", post.getTitle(), "Post title should be 'Hello, World!'");
     }
 
     @Test

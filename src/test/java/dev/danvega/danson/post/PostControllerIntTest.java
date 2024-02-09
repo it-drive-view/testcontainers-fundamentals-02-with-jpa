@@ -80,10 +80,10 @@ class PostControllerIntTest {
         ResponseEntity<Post> response = restTemplate.exchange("/api/posts", HttpMethod.POST, new HttpEntity<Post>(post), Post.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
         assertThat(response.getBody()).isNotNull();
-        assertThat(Objects.requireNonNull(response.getBody()).id()).isEqualTo(101);
-        assertThat(response.getBody().userId()).isEqualTo(1);
-        assertThat(response.getBody().title()).isEqualTo("101 Title");
-        assertThat(response.getBody().body()).isEqualTo("101 Body");
+        assertThat(Objects.requireNonNull(response.getBody()).getId()).isEqualTo(101);
+        assertThat(response.getBody().getUserId()).isEqualTo(1);
+        assertThat(response.getBody().getTitle()).isEqualTo("101 Title");
+        assertThat(response.getBody().getBody()).isEqualTo("101 Body");
     }
 
     @Test
@@ -102,12 +102,12 @@ class PostControllerIntTest {
 
         Post existing = response.getBody();
         assertThat(existing).isNotNull();
-        Post updated = new Post(existing.id(),existing.userId(),"NEW POST TITLE #1", "NEW POST BODY #1",existing.version());
+        Post updated = new Post(existing.getId(),existing.getUserId(),"NEW POST TITLE #1", "NEW POST BODY #1",existing.getVersion());
 
-        assertThat(updated.id()).isEqualTo(99);
-        assertThat(updated.userId()).isEqualTo(10);
-        assertThat(updated.title()).isEqualTo("NEW POST TITLE #1");
-        assertThat(updated.body()).isEqualTo("NEW POST BODY #1");
+        assertThat(updated.getId()).isEqualTo(99);
+        assertThat(updated.getUserId()).isEqualTo(10);
+        assertThat(updated.getTitle()).isEqualTo("NEW POST TITLE #1");
+        assertThat(updated.getBody()).isEqualTo("NEW POST BODY #1");
     }
 
     @Test
