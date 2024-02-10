@@ -1,9 +1,1 @@
 dev/danvega/danson/Application.class
-dev/danvega/danson/post/PostDataLoader.class
-dev/danvega/danson/post/PostNotFoundException.class
-dev/danvega/danson/post/PostController.class
-dev/danvega/danson/post/Posts.class
-dev/danvega/danson/order/Order.class
-dev/danvega/danson/post/PostRepository.class
-dev/danvega/danson/order/OrderRepository.class
-dev/danvega/danson/post/Post.class
