@@ -1,6 +1,9 @@
-# Particularité de ce projet : 
+# this project is designed to be used in test mode only : do not try to use is it at runtime, this is not the purpose.
 
-- on utilise les annotations @Entity
+How to make it work ? in a command terminal, type : 
+mvn clean test
+
+
 
 
 
