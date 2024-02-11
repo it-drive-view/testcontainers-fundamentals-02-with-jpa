@@ -1,7 +1,7 @@
-package UsingNewAnnotation;
+package com.coussy.testcontainer.twoways;
 
-import dev.danvega.danson.post.Post;
-import dev.danvega.danson.post.PostRepository;
+import com.coussy.testcontainer.post.Post;
+import com.coussy.testcontainer.post.PostRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import java.util.Optional;
 })
 @Testcontainers
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class TableCreatedByJpa {
+public class OldWayAnnotationDynamicPropertySourceTest {
 
     @Container
     static GenericContainer database = new PostgreSQLContainer("postgres:12")
@@ -29,14 +29,14 @@ public class TableCreatedByJpa {
             .withPassword("springboot")
             .withUsername("springboot");
 
-    @Autowired
-    PostRepository postRepository;
-
     @DynamicPropertySource
     static void setDatasourceProperties(DynamicPropertyRegistry propertyRegistry) {
         propertyRegistry.add("spring.datasource.url", () -> ((PostgreSQLContainer) database).getJdbcUrl());
         propertyRegistry.add("spring.datasource.username", () -> ((PostgreSQLContainer) database).getUsername());
     }
+
+    @Autowired
+    PostRepository postRepository;
 
     @Test
     void shouldReturnOrdersThatContainMacBookPro() throws InterruptedException {

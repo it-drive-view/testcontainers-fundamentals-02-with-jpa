@@ -1,4 +1,4 @@
-package dev.danvega.danson.post;
+package com.coussy.testcontainer.post;
 
 import org.springframework.data.repository.CrudRepository;
 

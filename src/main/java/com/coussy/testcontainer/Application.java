@@ -1,4 +1,4 @@
-package dev.danvega.danson;
+package com.coussy.testcontainer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

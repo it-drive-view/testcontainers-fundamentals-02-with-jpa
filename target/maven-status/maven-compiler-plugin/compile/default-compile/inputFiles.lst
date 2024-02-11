@@ -1,3 +1,3 @@
-/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/dev/danvega/danson/Application.java
-/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/dev/danvega/danson/post/Post.java
-/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/dev/danvega/danson/post/PostRepository.java
+/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/com/coussy/testcontainer/Application.java
+/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/com/coussy/testcontainer/post/PostRepository.java
+/home/easy/git/testcontainers-fundamentals-02-with-jpa/src/main/java/com/coussy/testcontainer/post/Post.java

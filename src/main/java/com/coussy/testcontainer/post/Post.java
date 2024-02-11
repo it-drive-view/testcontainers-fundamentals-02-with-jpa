@@ -1,10 +1,6 @@
-package dev.danvega.danson.post;
+package com.coussy.testcontainer.post;
 
-import javax.persistence.*;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import jakarta.persistence.*;
 
 @Entity
 public class Post {
