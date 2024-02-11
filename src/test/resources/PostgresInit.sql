@@ -3,10 +3,6 @@ CREATE TABLE public.post (
 	body varchar(255) NULL,
 	title varchar(255) NULL,
 	user_id int4 NULL,
-	"version" int4 NULL,
-	CONSTRAINT post_pkey PRIMARY KEY (id)
+	"version" int4 NULL
 );
-
-
-
 

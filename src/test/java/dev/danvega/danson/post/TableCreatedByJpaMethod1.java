@@ -14,12 +14,17 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.util.Optional;
 
+// 1- we need to create "post" table in the database
+// 2- we are in jpa/hibernate, so with @Entity annotation, program will be able to create the table
+// 3- but we have to specify the property : "spring.jpa.hibernate.ddl-auto= create-drop"
+// 4- this will be done into the annotation @DataJpaTest below
+
 @DataJpaTest(properties = {
         "spring.jpa.hibernate.ddl-auto= create-drop"
 })
 @Testcontainers
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class TableCreatedByJpa {
+public class TableCreatedByJpaMethod1 {
 
     @Container
     static GenericContainer database = new PostgreSQLContainer("postgres:12")
