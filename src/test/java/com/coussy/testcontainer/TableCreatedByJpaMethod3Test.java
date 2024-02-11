@@ -22,12 +22,12 @@ import java.util.Optional;
 // 1- we need to create "post" table in the database
 // 2- we are in jpa/hibernate, so with @Entity annotation, program will be able to create the table
 // 3- but we have to specify the property : "spring.jpa.hibernate.ddl-auto= create-drop"
-// 4- this will be done by the property file : test-override.properties
+// 4- this will be done by the ActiveProfile "testcontainer" which reads the property file named "application-testcontainer.properties"
 
 @Testcontainers
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-@ActiveProfiles("test")
+@ActiveProfiles("testcontainer")
 public class TableCreatedByJpaMethod3Test {
 
     @Container
