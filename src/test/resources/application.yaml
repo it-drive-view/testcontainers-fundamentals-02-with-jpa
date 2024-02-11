@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    password: springboot
+    username: springboot
+    url: jdbc:postgresql://localhost:5432/springboot
